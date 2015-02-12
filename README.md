@@ -1,9 +1,16 @@
 # CoffeeFinder
 
-# Synopsis
+# Table of Contents
+ 
+* [Synopsis](#synopsis)
+* [Design Considerations](#design-considerations)
+* [Testing](#testing)
+* [Contributors](#contributors)
+
+# <a name="synopsis"></a>Synopsis
 This project incorporates the Foursquare API in order to find nearby coffee stores in order of proximity and then provide relevant data and directions.
 
-# Design Considerations
+# <a name="design-considerations"></a>Design Considerations
 
 The app is designed to be relatively lightweight, seeing as network access will typically happen using mobile data. 
 
@@ -22,8 +29,8 @@ For best results in a densely populated city, an optimal distance would be about
 It's also important to note that a wider search radius results in the acquisition of more relevant and popular venues. The Foursquare does not have an option for "closest venues" but instead provides search results based on which locations you are most likely to check in to (if you were a user). 
 This is likely based on factors such as the completeness of a venue's details, proximity and user rating. Future updates will incorporate other parameters in order to provide the best user experience.
 
-# Testing
+# <a name="testing"></a>Testing
 JUnit tests can be performed in IntelliJ by right clicking the TestHomeActivity.java file, selecting the "Select TestHomeActivity' option and then building the project. Automated testing is carried out using the Robolectric framework.
 
-# Contributors
+# <a name="contributors"></a>Contributors
 Joshua Bright - jbright927@gmail.com
