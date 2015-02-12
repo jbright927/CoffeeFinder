@@ -30,7 +30,7 @@ It's also important to note that a wider search radius results in the acquisitio
 This is likely based on factors such as the completeness of a venue's details, proximity and user rating. Future updates will incorporate other parameters in order to provide the best user experience.
 
 # <a name="testing"></a>Testing
-JUnit tests can be performed in IntelliJ by right clicking the TestHomeActivity.java file, selecting the "Select TestHomeActivity' option and then building the project. Automated testing is carried out using the Robolectric framework.
+JUnit tests can be performed in IntelliJ by right clicking the TestHomeActivity.java file, selecting the "Select TestHomeActivity' option and then running the project. Automated testing is carried out using the Robolectric framework.
 
 # <a name="contributors"></a>Contributors
 Joshua Bright - jbright927@gmail.com
