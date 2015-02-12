@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CoffeeFinder.iml" filepath="$PROJECT_DIR$/CoffeeFinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appcompat/appcompat.iml" filepath="$PROJECT_DIR$/appcompat/appcompat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/foursquare-api-java-20140131/src/main/foursquare-20140131.iml" filepath="$PROJECT_DIR$/foursquare-api-java-20140131/src/main/foursquare-20140131.iml" />
+    </modules>
+  </component>
+</project>
+

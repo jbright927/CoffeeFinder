@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_marginBottom="@dimen/actionbar_layout_padding">
+
+    <ImageView
+            android:id="@+id/actionbar_top_launcher_icon"
+            android:layout_width="@dimen/actionbar_icon_size"
+            android:layout_height="@dimen/actionbar_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/actionbar_icon_margin"
+            android:src="@drawable/ic_launcher_coffee" />
+
+    <TextView
+            android:id="@+id/actionbar_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/actionbar_top_launcher_icon"
+            android:paddingLeft="@dimen/actionbar_title_padding"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/app_name"
+            android:textColor="#fff"/>
+
+    <ImageButton
+            android:id="@+id/actionbar_top_btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/actionbar_button_padding"
+            android:padding="@dimen/actionbar_top_btn_refresh_padding"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/ic_action_refresh" />
+
+</RelativeLayout>

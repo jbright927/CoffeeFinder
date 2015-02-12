@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Action Bar -->
+    <dimen name="actionbar_height">55dp</dimen>
+    <dimen name="actionbar_layout_padding">5dp</dimen>
+    <dimen name="actionbar_title_padding">10dp</dimen>
+    <dimen name="actionbar_button_padding">20dp</dimen>
+    <dimen name="actionbar_icon_size">35dp</dimen>
+    <dimen name="actionbar_icon_margin">8dp</dimen>
+    <dimen name="actionbar_top_btn_refresh_padding">5dp</dimen>
+
+    <!-- List Category Layout -->
+    <dimen name="list_category_layout_padding">5dp</dimen>
+    <dimen name="list_category_left_padding">50dp</dimen>
+    <dimen name="list_category_dist_padding">20dp</dimen>
+
+    <!-- List Details Layout -->
+    <dimen name="list_details_layout_padding_top">5dp</dimen>
+    <dimen name="list_details_layout_padding_bottom">10dp</dimen>
+    <dimen name="list_details_left_padding">50dp</dimen>
+    <dimen name="list_details_btn_margin_right">20dp</dimen>
+
+</resources>
