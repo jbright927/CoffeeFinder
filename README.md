@@ -2,11 +2,13 @@
 
 This project incorporates the Foursquare API in order to find nearby coffee stores in order of proximity and then provide relevant data and directions.
 
+
 # Table of Contents
  
 * [Design Considerations](#design-considerations)
 * [Testing](#testing)
 * [Contributors](#contributors)
+
 
 # <a name="design-considerations"></a>Design Considerations
 
