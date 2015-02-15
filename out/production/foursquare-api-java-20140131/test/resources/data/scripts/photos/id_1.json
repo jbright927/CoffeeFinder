@@ -1,8 +1,0 @@
-{
-    "meta": {
-        "errorType": "invalid_auth",
-        "code": 400,
-        "errorDetail": "Missing access credentials. See https://developer.foursquare.com/docs/oauth.html for details."
-    },
-    "response": {}
-}
