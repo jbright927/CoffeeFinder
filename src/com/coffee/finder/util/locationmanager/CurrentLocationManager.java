@@ -85,7 +85,7 @@ public class CurrentLocationManager {
         }
 
         //If we can't access the internet, add that to the message as well
-        if (!CustomNetworkManager.get().getIsMobileDataEnabled() && !CustomNetworkManager.get().getIsWifiConnected())
+        else if (!CustomNetworkManager.get().getIsMobileDataEnabled() && !CustomNetworkManager.get().getIsWifiConnected())
         {
             if (!addressString.equals(""))
                 addressString += ", ";
@@ -94,7 +94,7 @@ public class CurrentLocationManager {
         }
 
         //If GPS is disabled or we can't access the internet, don't attempt to display address data
-        if (addressString.equals("")) {
+        else {
 
             Geocoder geocoder = new Geocoder(ctx, Locale.getDefault());
 
