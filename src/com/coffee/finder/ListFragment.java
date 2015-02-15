@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.LinearLayout;
 import com.coffee.finder.util.customlistadapter.CustomExpandableListAdapter;
 import com.coffee.finder.util.customlistadapter.ListCategory;
 import com.coffee.finder.util.customlistadapter.ListItemDetails;
@@ -75,7 +76,7 @@ public class ListFragment extends Fragment {
 
     private void setupListUpdateRunnable() {
 
-        FoursquareHelper.get().searchVenues(new Runnable() {
+        FoursquareHelper.get().searchVenues(rootView, new Runnable() {
             @Override
             public void run() {
                 Log.d("ListFragment", "Updating List");
@@ -86,6 +87,9 @@ public class ListFragment extends Fragment {
 
                 if (searchResults == null | searchResults.getResult() == null)
                     return;
+
+                LinearLayout progressBarView = (LinearLayout) rootView.findViewById(R.id.progress_bar_view);
+                progressBarView.setVisibility(View.GONE);
 
                 catList.clear();
 

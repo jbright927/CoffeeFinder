@@ -4,6 +4,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
+import com.coffee.finder.R;
 import com.coffee.finder.util.customlistadapter.CustomExpandableListAdapter;
 import com.coffee.finder.util.customlistadapter.ListItemDetails;
 import com.coffee.finder.util.customquicksort.CustomQuickSort;
@@ -92,7 +95,10 @@ public class FoursquareHelper {
 
     }
 
-    public void searchVenues(final Runnable listUpdateRunnable) {
+    public void searchVenues(View rootView, final Runnable listUpdateRunnable) {
+        LinearLayout progressBarView = (LinearLayout) rootView.findViewById(R.id.progress_bar_view);
+        progressBarView.setVisibility(View.VISIBLE);
+
         this.listUpdateRunnable = listUpdateRunnable;
         searchVenues();
     }
