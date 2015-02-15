@@ -102,7 +102,9 @@ public class CurrentLocationManager {
             try {
                 List<Address> addresses = geocoder.getFromLocation(lat, lng, 1);
 
-                addressString += addresses.get(0).getAddressLine(0) + ", " + addresses.get(0).getAddressLine(1);
+                if (addresses.size() != 0)
+                    addressString += addresses.get(0).getAddressLine(0) + ", " + addresses.get(0).getAddressLine(1);
+
                 Log.d("CurrentLocationManager", addressString);
 
             } catch (IOException e) {
